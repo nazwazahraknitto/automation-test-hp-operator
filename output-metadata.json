@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.mobileknitto",
+  "variantName": "processDevReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 56,
+      "versionName": "1.0.0.56.0",
+      "outputFile": "app-dev-release.apk"
+    }
+  ]
+}
