@@ -14,20 +14,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
-import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
-WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.1. Akses Menu Pencarian Kain'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-CustomKeywords.'reusablesteps.ReusableStep.checkDataOrderisOpened'()
-
-String targetText = 'OH151125001'
-CustomKeywords.'helper.GlobalFunction.findTextUntilfound'('OH201125012', 10)
-
-Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Lokasi - Button OK'), 
-    0)
 

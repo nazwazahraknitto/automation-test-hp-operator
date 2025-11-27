@@ -114,9 +114,9 @@ class GlobalFunction {
 	def tapContainText(String textToSearch) {
 		TestObject dynamicObj = new TestObject("dynamicElement")
 		dynamicObj.addProperty("xpath", ConditionType.EQUALS,
-			"//*[@class='android.widget.TextView' and contains(@text, '" + textToSearch + "')]"
-		)
-		
+				"//*[@class='android.widget.TextView' and contains(@text, '" + textToSearch + "')]"
+				)
+
 		Mobile.tap(dynamicObj, 10)
 	}
 }

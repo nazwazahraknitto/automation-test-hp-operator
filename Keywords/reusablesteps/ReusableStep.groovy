@@ -65,4 +65,34 @@ class ReusableStep {
 
 		Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Button Login'), 0)
 	}
+
+	@Keyword
+	def checkDataOrderisOpened() {
+		if (Mobile.verifyElementExist(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Pop Up Scan Faktur Asli'),
+				3, FailureHandling.OPTIONAL)) {
+			println('KETEMU')
+
+			Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Button Input Manual Faktur Asli'),
+					0)
+
+			Mobile.delay(2)
+
+			Mobile.pressBack()
+		}
+		
+		if (Mobile.verifyElementExist(findTestObject('Application/App/Activity/Pencarian Kain - Page/Pop Up Scan Lokasi'), 3, FailureHandling.OPTIONAL)) {
+			println('KETEMU')
+		
+			Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Lokasi - Button OK'),
+				0)
+		
+			Mobile.delay(2)
+		
+			Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Button Back - Page Pencarian Kain'),
+				0)
+		
+			Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Konfirmasi Ganti Order'),
+				0)
+		}
+	}
 }

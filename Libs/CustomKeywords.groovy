@@ -17,6 +17,11 @@ def static "reusablesteps.ReusableStep.LoginApps"(
          , 	password)
 }
 
+
+def static "reusablesteps.ReusableStep.checkDataOrderisOpened"() {
+    (new reusablesteps.ReusableStep()).checkDataOrderisOpened()
+}
+
  /**
 	 * Check if element present in timeout
 	 * @param to Katalon test object
