@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2.1. Akses Menu Pencarian Kain</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d5c933d5-cf15-4a72-85b1-a617fbd12139</testCaseGuid>
+</TestCaseEntity>

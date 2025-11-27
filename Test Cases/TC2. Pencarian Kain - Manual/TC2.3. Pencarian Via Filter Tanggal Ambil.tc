@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2.3. Pencarian Via Filter Tanggal Ambil</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4a253e21-444c-438e-b44d-9087b8d63d08</testCaseGuid>
+</TestCaseEntity>

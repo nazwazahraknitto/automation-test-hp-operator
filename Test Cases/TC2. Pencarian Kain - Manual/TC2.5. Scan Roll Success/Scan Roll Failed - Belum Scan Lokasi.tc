@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Scan Roll Failed - Belum Scan Lokasi</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8ab51f60-902f-4a74-b3b7-13fc42b868c2</testCaseGuid>
+</TestCaseEntity>

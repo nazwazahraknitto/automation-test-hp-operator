@@ -15,14 +15,14 @@
       <guid>b3cd1999-1103-4de5-b495-c285c6e7295e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login Cases/Login Failed - Empty Cases</testCaseId>
+      <testCaseId>Test Cases/TC1. Login Cases/TC1.2. Login Failed - Empty Cases</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>f99ffe61-b827-4006-885b-cd99624073ea</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login Cases/Logout Case</testCaseId>
+      <testCaseId>Test Cases/TC1. Login Cases/TC1.3. Logout Case</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

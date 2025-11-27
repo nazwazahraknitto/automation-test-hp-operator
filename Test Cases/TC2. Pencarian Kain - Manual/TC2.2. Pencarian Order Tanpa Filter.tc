@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2.2. Pencarian Order Tanpa Filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0b0e4004-5a0b-4646-b30c-0b94983e41d8</testCaseGuid>
+</TestCaseEntity>

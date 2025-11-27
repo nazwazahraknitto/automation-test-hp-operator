@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Login Failed - Empty Cases</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>b7291ab8-d76b-4514-90c5-2cd85511a089</testCaseGuid>
-</TestCaseEntity>
