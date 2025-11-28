@@ -24,11 +24,11 @@ WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.3. Pencarian V
 Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Pop Up Scan No Roll - Button Input Manual'), 
     0)
 
-Mobile.sendKeys(findTestObject('Object Repository/Field 3 Digit No Penjualan'), nopenj)
+Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Field 3 Digit No Penjualan'), nopenj)
 
-Mobile.sendKeys(findTestObject('Object Repository/Field Kode Verifikasi'), verif)
+Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Field Kode Verifikasi'), verif)
 
-Mobile.tap(findTestObject('Object Repository/Pop Up Scan Faktur - Button Pilih'), 0)
+Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Pop Up Scan Faktur - Button Pilih'), 0)
 
 Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Pop Up Scan No Roll - Button Input Manual'), 
     0)

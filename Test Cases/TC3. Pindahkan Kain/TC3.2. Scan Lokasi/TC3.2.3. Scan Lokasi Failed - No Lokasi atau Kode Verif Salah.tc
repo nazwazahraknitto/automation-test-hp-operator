@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3.2.3. Scan Lokasi Failed - No Lokasi atau Kode Verif Salah</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>40cd0702-f178-47c6-a54f-b22afba23aa7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2195f5cb-741b-4e36-912c-d995df74cd94</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cb3c14e0-aee3-45b2-bdda-eb0401a3b759</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>null</defaultValue>
+      <description></description>
+      <id>2195f5cb-741b-4e36-912c-d995df74cd94</id>
+      <masked>false</masked>
+      <name>nolokasi</name>
+   </variable>
+   <variable>
+      <defaultValue>null</defaultValue>
+      <description></description>
+      <id>cb3c14e0-aee3-45b2-bdda-eb0401a3b759</id>
+      <masked>false</masked>
+      <name>kodeverif</name>
+   </variable>
+</TestCaseEntity>

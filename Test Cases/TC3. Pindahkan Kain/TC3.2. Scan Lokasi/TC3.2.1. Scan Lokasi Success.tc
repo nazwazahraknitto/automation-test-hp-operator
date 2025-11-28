@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3.2.1. Scan Lokasi Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>033a3acf-0d91-4871-a17e-006bc8a901e7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bde2b93c-c00f-45c7-9a40-b1a6c545b724</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6c584ae3-5d4c-44e4-bcaf-2d38ac3ba39a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'LOKASINANATESTING1'</defaultValue>
+      <description></description>
+      <id>bde2b93c-c00f-45c7-9a40-b1a6c545b724</id>
+      <masked>false</masked>
+      <name>nolokasi</name>
+   </variable>
+   <variable>
+      <defaultValue>'485'</defaultValue>
+      <description></description>
+      <id>6c584ae3-5d4c-44e4-bcaf-2d38ac3ba39a</id>
+      <masked>false</masked>
+      <name>kodeverif</name>
+   </variable>
+</TestCaseEntity>

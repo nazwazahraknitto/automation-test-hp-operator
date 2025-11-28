@@ -17,17 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.3. Pencarian Via Filter Tanggal Ambil'), [('noorder') : noorder
-        , ('tanggalpilih') : tanggalpilih], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TC1. Login Cases/TC1.1. Login Success'), [('username') : 'nazwa', ('password') : 'dmain'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Button Input Manual Faktur Asli'), 
-    0)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Field 3 Digit No Penjualan'), '123')
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Field Kode Verifikasi'), '123')
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Pop Up Scan Faktur - Button Pilih'), 0)
-
-Mobile.verifyElementExist(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Alert No Penjualan dan Kode Verif Salah'), 0)
+Mobile.tap(findTestObject('Application/App/Activity/Menu Utama/Menu - Pindahkan Kain Rollan'), 0)
 

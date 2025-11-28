@@ -6,12 +6,6 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>d5c933d5-cf15-4a72-85b1-a617fbd12139</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>eca12876-bcc9-4f6b-b38f-1ff5e5ec3a10</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>'nazwaaca'</defaultValue>
       <description></description>

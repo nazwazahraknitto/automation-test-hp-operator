@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3.1. Akses Menu Pindahkan Kain</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>19ccabc4-f1db-4772-a958-840101929656</testCaseGuid>
+</TestCaseEntity>

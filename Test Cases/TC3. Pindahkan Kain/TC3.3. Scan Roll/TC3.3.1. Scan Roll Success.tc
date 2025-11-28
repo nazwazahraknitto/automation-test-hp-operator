@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3.3.1. Scan Roll Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9592b49b-2bbd-4bc6-a791-fcf85e8fa5e8</testCaseGuid>
+</TestCaseEntity>

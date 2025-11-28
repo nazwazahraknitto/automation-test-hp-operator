@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3.2.2. Scan Lokasi Failed - Empty Cases</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>230a88d5-df86-466f-9729-8050e688ee6b</testCaseGuid>
+</TestCaseEntity>

@@ -17,17 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.3. Pencarian Via Filter Tanggal Ambil'), [('noorder') : noorder
-        , ('tanggalpilih') : tanggalpilih], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TC3. Pindahkan Kain/TC3.2. Scan Lokasi/TC3.2.1. Scan Lokasi Success'), [('nolokasi') : nolokasi
+        , ('kodeverif') : kodeverif], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Button Input Manual Faktur Asli'), 
+Mobile.verifyElementExist(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Lokasi/Alert Kode Verifikasi Salah'), 
     0)
 
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Field 3 Digit No Penjualan'), '123')
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Field Kode Verifikasi'), '123')
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Pop Up Scan Faktur - Button Pilih'), 0)
-
-Mobile.verifyElementExist(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Alert No Penjualan dan Kode Verif Salah'), 0)
+Mobile.tap(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Lokasi/Alert kode verif salah - Button OK'), 
+    0)
 

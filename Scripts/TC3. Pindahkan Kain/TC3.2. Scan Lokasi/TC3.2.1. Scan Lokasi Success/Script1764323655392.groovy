@@ -17,17 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.3. Pencarian Via Filter Tanggal Ambil'), [('noorder') : noorder
-        , ('tanggalpilih') : tanggalpilih], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TC3. Pindahkan Kain/TC3.1. Akses Menu Pindahkan Kain'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Button Input Manual Faktur Asli'), 
+Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Lokasi/Pop Up Awal - Button Scan Lokasi'), 
     0)
 
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Field 3 Digit No Penjualan'), '123')
+Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Lokasi/Button Buka Form Lokasi'), 
+    0)
 
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Field Kode Verifikasi'), '123')
+Mobile.delay(1)
 
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Pop Up Scan Faktur - Button Pilih'), 0)
+Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Lokasi/Pemindahan Kain Rollan - Field No Lokasi'), 
+    nolokasi)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Alert No Penjualan dan Kode Verif Salah'), 0)
+Mobile.sendKeys(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Lokasi/Pemindahan Kain Rollan - Field Kode Verifikasi'), 
+    kodeverif)
+
+Mobile.tap(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Lokasi/Scan Lokasi - Button Submit'), 0)
 
