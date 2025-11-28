@@ -14,30 +14,13 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication(RunConfiguration.getProjectDir() + '/androidapp/app-dev-release.apk', true)
+String username = ''
 
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Focus On Field Username'), 0)
+String password = ''
 
-Mobile.setText(findTestObject('Object Repository/Application/App/Activity/Page-login/Field Username'), 
-    '', 0)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Fokus On Field Password'), 0)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Page-login/Field Password'), 
-    '')
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Button Login'), 0)
-
-Mobile.verifyElementExist(findTestObject('Application/App/Activity/Page-login/Pop Up Gagal Login - Msg Username Password Salah'), 
-    0)
-
-Mobile.tap(findTestObject('Application/App/Activity/Page-login/Pop Up Gagal Login - Button OK'), 0)
+CustomKeywords.'reusablesteps.ReusableStep.LoginApps'(username, password)
 

@@ -14,30 +14,20 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.3. Pencarian Via Filter Tanggal Ambil'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.3. Pencarian Via Filter Tanggal Ambil'), [('noorder') : noorder
+        , ('tanggalpilih') : tanggalpilih], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Button Kode Lokasi'), 0)
+Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Button Input Manual Faktur Asli'), 
+    0)
 
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Nomor Lokasi'), 
-    'T1')
+Mobile.sendKeys(findTestObject('Object Repository/Field 3 Digit No Penjualan'), '123')
 
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Kode Verifikasi'), 
-    '1')
+Mobile.sendKeys(findTestObject('Object Repository/Field Kode Verifikasi'), '123')
 
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Button Submit'), 0)
+Mobile.tap(findTestObject('Object Repository/Pop Up Scan Faktur - Button Pilih'), 0)
 
-String Rolldiscan = "R25100570"
-
-CustomKeywords.'helper.GlobalFunction.tapContainText'(Rolldiscan)
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Button Pilih'), 0)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Kode Verifikasi Roll'), 
-    '123')
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Button Submit'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/Alert No Penjualan dan Kode Verif Salah'), 0)
 

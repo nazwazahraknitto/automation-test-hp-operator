@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Scan Lokasi Success - Copy</name>
+   <name>Scan Roll Success - Belum bayar</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>ef87bdfe-31d3-47f3-9575-207c1dc9129f</testCaseGuid>
+   <testCaseGuid>eccc8f1d-9836-4624-a999-1686c37a7305</testCaseGuid>
 </TestCaseEntity>

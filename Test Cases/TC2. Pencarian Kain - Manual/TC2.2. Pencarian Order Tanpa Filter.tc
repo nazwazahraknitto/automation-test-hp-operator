@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>0b0e4004-5a0b-4646-b30c-0b94983e41d8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a245532f-3ae4-46ac-98dc-557e9947628b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'OH211125005'</defaultValue>
+      <description></description>
+      <id>a245532f-3ae4-46ac-98dc-557e9947628b</id>
+      <masked>false</masked>
+      <name>noorder</name>
+   </variable>
 </TestCaseEntity>

@@ -22,6 +22,11 @@ def static "reusablesteps.ReusableStep.checkDataOrderisOpened"() {
     (new reusablesteps.ReusableStep()).checkDataOrderisOpened()
 }
 
+
+def static "reusablesteps.ReusableStep.cekrollsudahscansemua"() {
+    (new reusablesteps.ReusableStep()).cekrollsudahscansemua()
+}
+
  /**
 	 * Check if element present in timeout
 	 * @param to Katalon test object

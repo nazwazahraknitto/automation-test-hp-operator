@@ -14,12 +14,19 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.4. Case Scan Lokasi/Scan Lokasi Success'), [('nolokasi') : 'T1'
+        , ('verif') : '1', ('noorder') : noorder, ('tanggalpilih') : tanggalpilih], FailureHandling.STOP_ON_FAILURE)
 
-//String username = "nazwa"
-//String password = "dmain"
+CustomKeywords.'helper.GlobalFunction.tapContainText'(noroll)
 
-CustomKeywords.'reusablesteps.ReusableStep.LoginApps'(this.username, this.password)
+Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Button Pilih'), 0)
+
+Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Kode Verifikasi Roll'), 
+    kode)
+
+Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Button Submit'), 0)
+

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FolderEntity>
    <description>folder</description>
-   <name>TC2.5. Scan Roll Success</name>
+   <name>TC2.5. Scan Roll</name>
    <tag></tag>
    <folderType>TESTCASE</folderType>
 </FolderEntity>

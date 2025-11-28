@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Scan Lokasi Success</name>
+   <name>Scan Roll Failed - Belum Scan Lokasi</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>3b4daaa1-be7d-4f52-92bc-90920bc00e28</testCaseGuid>
+   <testCaseGuid>8ab51f60-902f-4a74-b3b7-13fc42b868c2</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a353e26f-65b7-441a-9645-b8737da7f6cf</variableId>
+      <variableId>bed2e7a2-e82d-4ac6-ad8a-0ac67619bb68</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0a477613-af0b-4954-8c7a-a6ea6a67afa0</variableId>
+      <variableId>86a32831-93df-4ba1-8797-8468a2bf4bcc</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c1b536f9-6402-4e9d-913f-94a14512e881</variableId>
+      <variableId>2bfe8f56-22d0-4a13-9c95-06b88b1c415a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b480cb02-d7ee-4708-9b65-49b3d894d3b8</variableId>
+      <variableId>1f690cdb-213a-4bf2-af0e-0a9e515da214</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'T1'</defaultValue>
+      <defaultValue>'OH201125001'</defaultValue>
       <description></description>
-      <id>a353e26f-65b7-441a-9645-b8737da7f6cf</id>
-      <masked>false</masked>
-      <name>nolokasi</name>
-   </variable>
-   <variable>
-      <defaultValue>'1'</defaultValue>
-      <description></description>
-      <id>0a477613-af0b-4954-8c7a-a6ea6a67afa0</id>
-      <masked>false</masked>
-      <name>verif</name>
-   </variable>
-   <variable>
-      <defaultValue>'OH281125007'</defaultValue>
-      <description></description>
-      <id>c1b536f9-6402-4e9d-913f-94a14512e881</id>
+      <id>bed2e7a2-e82d-4ac6-ad8a-0ac67619bb68</id>
       <masked>false</masked>
       <name>noorder</name>
    </variable>
    <variable>
       <defaultValue>'28'</defaultValue>
       <description></description>
-      <id>b480cb02-d7ee-4708-9b65-49b3d894d3b8</id>
+      <id>86a32831-93df-4ba1-8797-8468a2bf4bcc</id>
       <masked>false</masked>
       <name>tanggalpilih</name>
+   </variable>
+   <variable>
+      <defaultValue>'R27100824'</defaultValue>
+      <description></description>
+      <id>2bfe8f56-22d0-4a13-9c95-06b88b1c415a</id>
+      <masked>false</masked>
+      <name>noroll</name>
+   </variable>
+   <variable>
+      <defaultValue>'123'</defaultValue>
+      <description></description>
+      <id>1f690cdb-213a-4bf2-af0e-0a9e515da214</id>
+      <masked>false</masked>
+      <name>kode</name>
    </variable>
 </TestCaseEntity>

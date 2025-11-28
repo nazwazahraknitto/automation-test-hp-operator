@@ -17,3 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.4. Case Scan Lokasi/Scan Lokasi Success'), [('nolokasi') : 'Lokasinanates'
+        , ('verif') : '1', ('noorder') : 'OH281125007', ('tanggalpilih') : '28'], FailureHandling.STOP_ON_FAILURE)
+

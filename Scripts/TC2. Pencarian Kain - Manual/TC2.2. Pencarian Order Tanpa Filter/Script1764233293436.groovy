@@ -25,8 +25,7 @@ Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'reusablesteps.ReusableStep.checkDataOrderisOpened'()
 
-String targetText = 'OH151125001'
-CustomKeywords.'helper.GlobalFunction.findTextUntilfound'('OH201125012', 10)
+CustomKeywords.'helper.GlobalFunction.findTextUntilfound'(this.noorder, 10)
 
 Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Lokasi - Button OK'), 
     0)

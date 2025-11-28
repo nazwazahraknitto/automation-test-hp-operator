@@ -17,15 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.3. Pencarian Via Filter Tanggal Ambil'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.3. Pencarian Via Filter Tanggal Ambil'), [('tanggalpilih') : tanggalpilih
+        , ('noorder') : noorder], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Button Kode Lokasi'), 0)
+if(CustomKeywords.'reusablesteps.ReusableStep.checkDataOrderisOpened'() == true) {
+	return println("Semua roll sudah discan")
+}else {
+	Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Button Kode Lokasi'), 0)
+	
+	Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Nomor Lokasi'),
+		nolokasi)
+	
+	Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Kode Verifikasi'),
+		verif)
+	
+	Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Button Submit'), 0)
+}
 
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Nomor Lokasi'), 
-    'T1')
 
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Kode Verifikasi'), 
-    '1')
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Button Submit'), 0)
 

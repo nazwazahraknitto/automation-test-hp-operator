@@ -75,8 +75,8 @@ class GlobalFunction {
 	@Keyword
 	def findTextUntilfound(String targetText, int maxSwipe) {
 		int deviceHeight = Mobile.getDeviceHeight()
-		int startY = ((deviceHeight * 80) / 100) - 5
-		int endY   = ((deviceHeight * 20) / 100) + 5
+		int startY = ((deviceHeight * 80) / 100) - 10
+		int endY   = ((deviceHeight * 20) / 100) + 10
 
 		TestObject dynamicObj = new TestObject('dynamicObj')
 

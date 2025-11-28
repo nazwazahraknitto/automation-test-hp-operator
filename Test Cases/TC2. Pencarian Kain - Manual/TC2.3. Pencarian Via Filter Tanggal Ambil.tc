@@ -6,4 +6,30 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>4a253e21-444c-438e-b44d-9087b8d63d08</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e0b191ad-e222-415f-9224-73ca6b2042f5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ec3e9f00-e293-4273-9c3c-49e058ca333f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'OH281125007'</defaultValue>
+      <description></description>
+      <id>e0b191ad-e222-415f-9224-73ca6b2042f5</id>
+      <masked>false</masked>
+      <name>noorder</name>
+   </variable>
+   <variable>
+      <defaultValue>'28'</defaultValue>
+      <description></description>
+      <id>ec3e9f00-e293-4273-9c3c-49e058ca333f</id>
+      <masked>false</masked>
+      <name>tanggalpilih</name>
+   </variable>
 </TestCaseEntity>

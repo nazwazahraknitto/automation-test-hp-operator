@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Scan Roll Failed - Belum Scan Lokasi</name>
+   <name>Scan Lokasi Failed - Lokasi atau Verifikasi salah</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>8ab51f60-902f-4a74-b3b7-13fc42b868c2</testCaseGuid>
+   <testCaseGuid>ef87bdfe-31d3-47f3-9575-207c1dc9129f</testCaseGuid>
 </TestCaseEntity>

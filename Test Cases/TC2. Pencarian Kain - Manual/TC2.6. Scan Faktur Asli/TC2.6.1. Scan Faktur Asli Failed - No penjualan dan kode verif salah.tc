@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Scan Lokasi Success</name>
+   <name>TC2.6.1. Scan Faktur Asli Failed - No penjualan dan kode verif salah</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>3b4daaa1-be7d-4f52-92bc-90920bc00e28</testCaseGuid>
+   <testCaseGuid>2a2e3375-f017-4cf0-837f-5d14c1cbe0b9</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a353e26f-65b7-441a-9645-b8737da7f6cf</variableId>
+      <variableId>4b8f61e5-8e6b-43f1-a07d-b304bec9e061</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0a477613-af0b-4954-8c7a-a6ea6a67afa0</variableId>
+      <variableId>59545641-827c-4c7b-84a6-001747c38f7d</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c1b536f9-6402-4e9d-913f-94a14512e881</variableId>
+      <variableId>15ae9be4-4583-4557-b4a4-cbd57b3a5d62</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b480cb02-d7ee-4708-9b65-49b3d894d3b8</variableId>
+      <variableId>1c9c838a-ecd5-4cce-8242-06818a4cc70b</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'T1'</defaultValue>
+      <defaultValue>'OH281125014'</defaultValue>
       <description></description>
-      <id>a353e26f-65b7-441a-9645-b8737da7f6cf</id>
-      <masked>false</masked>
-      <name>nolokasi</name>
-   </variable>
-   <variable>
-      <defaultValue>'1'</defaultValue>
-      <description></description>
-      <id>0a477613-af0b-4954-8c7a-a6ea6a67afa0</id>
-      <masked>false</masked>
-      <name>verif</name>
-   </variable>
-   <variable>
-      <defaultValue>'OH281125007'</defaultValue>
-      <description></description>
-      <id>c1b536f9-6402-4e9d-913f-94a14512e881</id>
+      <id>4b8f61e5-8e6b-43f1-a07d-b304bec9e061</id>
       <masked>false</masked>
       <name>noorder</name>
    </variable>
    <variable>
+      <defaultValue>'R2210015981'</defaultValue>
+      <description></description>
+      <id>59545641-827c-4c7b-84a6-001747c38f7d</id>
+      <masked>false</masked>
+      <name>noroll</name>
+   </variable>
+   <variable>
       <defaultValue>'28'</defaultValue>
       <description></description>
-      <id>b480cb02-d7ee-4708-9b65-49b3d894d3b8</id>
+      <id>15ae9be4-4583-4557-b4a4-cbd57b3a5d62</id>
       <masked>false</masked>
       <name>tanggalpilih</name>
+   </variable>
+   <variable>
+      <defaultValue>'818'</defaultValue>
+      <description></description>
+      <id>1c9c838a-ecd5-4cce-8242-06818a4cc70b</id>
+      <masked>false</masked>
+      <name>kode</name>
    </variable>
 </TestCaseEntity>

@@ -18,8 +18,10 @@ import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.lang.String as String
 
-WebUI.callTestCase(findTestCase('TC1. Login Cases/TC1.1. Login Success'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TC1. Login Cases/TC1.1. Login Success'), [('username') : 'nazwa', ('password') : 'dmain'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Application/App/Activity/Menu Utama/Menu - Pencarian Kain'), 0)
 

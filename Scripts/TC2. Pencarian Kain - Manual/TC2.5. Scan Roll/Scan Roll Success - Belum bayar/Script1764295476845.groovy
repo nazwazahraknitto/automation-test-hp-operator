@@ -14,30 +14,12 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.3. Pencarian Via Filter Tanggal Ambil'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.5. Scan Roll/Scan Roll Success'), [('noorder') : 'OH281125007'
+        , ('tanggalpilih') : '28', ('noroll') : 'R24020242', ('kode') : '221'], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Button Kode Lokasi'), 0)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Nomor Lokasi'), 
-    'T1')
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Kode Verifikasi'), 
-    '1')
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Button Submit'), 0)
-
-String Rolldiscan = "R25100570"
-
-CustomKeywords.'helper.GlobalFunction.tapContainText'(Rolldiscan)
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Button Pilih'), 0)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Field Kode Verifikasi Roll'), 
-    '123')
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Scan Kain/Button Submit'), 0)
+Mobile.verifyElementExist(findTestObject('Application/App/Activity/Pencarian Kain - Page/Scan Kain/Pop Up Tidak Bisa Cetak Faktur Asli - Belum Bayar'), 
+    0)
 

@@ -34,6 +34,16 @@ public class GlobalVariable {
      */
     public static Object G_SiteURL
      
+    /**
+     * <p></p>
+     */
+    public static Object G_Username
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_Password
+     
 
     static {
         try {
@@ -45,6 +55,8 @@ public class GlobalVariable {
             G_AppPath = selectedVariables['G_AppPath']
             G_ShortTimeOut = selectedVariables['G_ShortTimeOut']
             G_SiteURL = selectedVariables['G_SiteURL']
+            G_Username = selectedVariables['G_Username']
+            G_Password = selectedVariables['G_Password']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

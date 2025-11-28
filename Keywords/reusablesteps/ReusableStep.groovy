@@ -47,23 +47,29 @@ class ReusableStep {
 
 	@Keyword
 	def LoginApps(String username, String password) {
+
 		Mobile.startApplication(RunConfiguration.getProjectDir() + '/androidapp/app-dev-release.apk', true)
 
-		Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Focus On Field Username'), 0)
+		if(username == null && password == null) {
+			Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Button Login'), 0)
+		}
+		else {
+			Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Focus On Field Username'), 0)
 
-		Mobile.setText(findTestObject('Object Repository/Application/App/Activity/Page-login/Field Username'),
-				username, 0)
+			Mobile.setText(findTestObject('Object Repository/Application/App/Activity/Page-login/Field Username'),
+					username, 0)
 
-		Mobile.hideKeyboard()
+			Mobile.hideKeyboard()
 
-		Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Fokus On Field Password'), 0)
+			Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Fokus On Field Password'), 0)
 
-		Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Page-login/Field Password'),
-				password)
+			Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Page-login/Field Password'),
+					password)
 
-		Mobile.hideKeyboard()
+			Mobile.hideKeyboard()
 
-		Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Button Login'), 0)
+			Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Page-login/Button Login'), 0)
+		}
 	}
 
 	@Keyword
@@ -72,27 +78,39 @@ class ReusableStep {
 				3, FailureHandling.OPTIONAL)) {
 			println('KETEMU')
 
-			Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Button Input Manual Faktur Asli'),
+			Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Pop Up Scan No Roll - Button Input Manual'),
 					0)
 
 			Mobile.delay(2)
 
 			Mobile.pressBack()
 		}
-		
+
 		if (Mobile.verifyElementExist(findTestObject('Application/App/Activity/Pencarian Kain - Page/Pop Up Scan Lokasi'), 3, FailureHandling.OPTIONAL)) {
 			println('KETEMU')
-		
+
 			Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Lokasi - Button OK'),
-				0)
-		
+					0)
+
 			Mobile.delay(2)
-		
+
 			Mobile.tap(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Button Back - Page Pencarian Kain'),
-				0)
-		
+					0)
+
 			Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Konfirmasi Ganti Order'),
-				0)
+					0)
+		}
+	}
+
+	@Keyword
+	def cekrollsudahscansemua() {
+		if (Mobile.verifyElementExist(findTestObject('Application/App/Activity/Pencarian Kain - Page/Filter Pencarian/Pop Up Scan Faktur Asli/Pop Up Scan Faktur Asli'),
+				3, FailureHandling.OPTIONAL)) {
+			println('KETEMU')
+			return false
+		}
+		else {
+			return true
 		}
 	}
 }
