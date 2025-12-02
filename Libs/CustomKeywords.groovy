@@ -27,12 +27,7 @@ def static "reusablesteps.ReusableStep.cekrollsudahscansemua"() {
     (new reusablesteps.ReusableStep()).cekrollsudahscansemua()
 }
 
- /**
-	 * Check if element present in timeout
-	 * @param to Katalon test object
-	 * @param timeout time to wait for element to show up
-	 * @return true if element present, otherwise false
-	 */ 
+
 def static "helper.GlobalFunction.isElementPresent_Mobile"(
     	TestObject to	
      , 	int timeout	) {
@@ -41,10 +36,7 @@ def static "helper.GlobalFunction.isElementPresent_Mobile"(
          , 	timeout)
 }
 
- /**
-	 * Get mobile driver for current session
-	 * @return mobile driver for current session
-	 */ 
+
 def static "helper.GlobalFunction.getCurrentSessionMobileDriver"() {
     (new helper.GlobalFunction()).getCurrentSessionMobileDriver()
 }

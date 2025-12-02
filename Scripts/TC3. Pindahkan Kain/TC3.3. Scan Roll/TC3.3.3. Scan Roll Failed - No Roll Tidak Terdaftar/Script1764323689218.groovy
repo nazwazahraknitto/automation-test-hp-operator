@@ -32,4 +32,6 @@ Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemin
 Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Submit Form'), 
     0)
 
+Mobile.verifyElementExist(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Alert No Roll Tidak Terdaftar'), 
+    0)
 

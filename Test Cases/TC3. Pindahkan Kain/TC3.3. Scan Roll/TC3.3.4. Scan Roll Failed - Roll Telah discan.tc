@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3.3.4. Scan Roll Failed - Roll Telah discan</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0ca903f5-ae1d-48ce-9550-2b600dc51261</testCaseGuid>
+</TestCaseEntity>

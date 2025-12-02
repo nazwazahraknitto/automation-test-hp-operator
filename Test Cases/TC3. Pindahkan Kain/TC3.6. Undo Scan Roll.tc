@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3.6. Undo Scan Roll</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>189cbdd7-9c02-440f-b67c-fc5032d6511d</testCaseGuid>
+</TestCaseEntity>

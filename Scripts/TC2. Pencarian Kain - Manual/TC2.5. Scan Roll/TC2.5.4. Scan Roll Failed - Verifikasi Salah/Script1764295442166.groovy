@@ -14,22 +14,10 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('TC3. Pindahkan Kain/TC3.2. Scan Lokasi/TC3.2.1. Scan Lokasi Success'), [('nolokasi') : 'LOKASINANATESTING1'
-        , ('kodeverif') : '485'], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Form Scan Roll'), 
-    0)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Field No Roll'), 
-    noroll)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Field Kode Verifikasi'), 
-    kodeverif)
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Submit Form'), 
-    0)
-
+WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.5. Scan Roll/TC2.5.1. Scan Roll Success'), [('noorder') : 'OH281125007'
+        , ('tanggalpilih') : '28', ('noroll') : 'R24020242', ('kode') : '221'], FailureHandling.STOP_ON_FAILURE)
 

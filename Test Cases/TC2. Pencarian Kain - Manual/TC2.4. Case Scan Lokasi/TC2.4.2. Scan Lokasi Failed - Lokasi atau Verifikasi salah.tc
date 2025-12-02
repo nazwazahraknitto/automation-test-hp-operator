@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2.4.2. Scan Lokasi Failed - Lokasi atau Verifikasi salah</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ef87bdfe-31d3-47f3-9575-207c1dc9129f</testCaseGuid>
+</TestCaseEntity>

@@ -17,19 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('TC3. Pindahkan Kain/TC3.2. Scan Lokasi/TC3.2.1. Scan Lokasi Success'), [('nolokasi') : 'LOKASINANATESTING1'
-        , ('kodeverif') : '485'], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Form Scan Roll'), 
-    0)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Field No Roll'), 
-    noroll)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Field Kode Verifikasi'), 
-    kodeverif)
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Submit Form'), 
-    0)
-
+WebUI.callTestCase(findTestCase('TC2. Pencarian Kain - Manual/TC2.4. Case Scan Lokasi/TC2.4.1. Scan Lokasi Success'), [('nolokasi') : ''
+        , ('verif') : '', ('noorder') : 'OH281125007', ('tanggalpilih') : '28'], FailureHandling.STOP_ON_FAILURE)
 

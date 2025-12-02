@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC3.7. Reset Scan Roll</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b7979309-6770-45e8-bfcd-6c8885fbd4a2</testCaseGuid>
+</TestCaseEntity>

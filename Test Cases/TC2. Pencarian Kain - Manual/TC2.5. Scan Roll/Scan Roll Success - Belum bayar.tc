@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Scan Roll Success - Belum bayar</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>eccc8f1d-9836-4624-a999-1686c37a7305</testCaseGuid>
-</TestCaseEntity>

@@ -20,16 +20,8 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('TC3. Pindahkan Kain/TC3.2. Scan Lokasi/TC3.2.1. Scan Lokasi Success'), [('nolokasi') : 'LOKASINANATESTING1'
         , ('kodeverif') : '485'], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Form Scan Roll'), 
+Mobile.tap(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Selesai Scan'), 0)
+
+Mobile.verifyElementExist(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Toast - Silahkan scan kain terlebih dahulu sebelum menyelesaikan'), 
     0)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Field No Roll'), 
-    noroll)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Field Kode Verifikasi'), 
-    kodeverif)
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Submit Form'), 
-    0)
-
 

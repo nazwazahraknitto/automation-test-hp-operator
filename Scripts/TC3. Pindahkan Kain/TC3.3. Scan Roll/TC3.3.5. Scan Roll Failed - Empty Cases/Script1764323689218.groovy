@@ -23,13 +23,9 @@ WebUI.callTestCase(findTestCase('TC3. Pindahkan Kain/TC3.2. Scan Lokasi/TC3.2.1.
 Mobile.tap(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Form Scan Roll'), 
     0)
 
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Field No Roll'), 
-    noroll)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Field Kode Verifikasi'), 
-    kodeverif)
-
 Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Submit Form'), 
     0)
 
+Mobile.verifyElementExist(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Toast - No Roll tidak boleh kosong'), 
+    0)
 

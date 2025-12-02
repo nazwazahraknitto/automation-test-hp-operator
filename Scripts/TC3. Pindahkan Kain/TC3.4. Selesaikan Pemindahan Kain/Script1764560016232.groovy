@@ -17,19 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('TC3. Pindahkan Kain/TC3.2. Scan Lokasi/TC3.2.1. Scan Lokasi Success'), [('nolokasi') : 'LOKASINANATESTING1'
-        , ('kodeverif') : '485'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TC3. Pindahkan Kain/TC3.3. Scan Roll/TC3.3.1. Scan Roll Success'), [('noroll') : noroll
+        , ('kodeverif') : kodeverif], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Form Scan Roll'), 
+Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Selesai Scan'), 
     0)
 
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Field No Roll'), 
-    noroll)
-
-Mobile.sendKeys(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Field Kode Verifikasi'), 
-    kodeverif)
-
-Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Submit Form'), 
+Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Konfirmasi Reset - Yes'), 
     0)
 
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Ambil Fhoto'), 
+    0)
+
+Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Button Simpan Foto'), 
+    0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Alert Pemindahan kain sukses'), 
+    0)
+
+Mobile.tap(findTestObject('Object Repository/Application/App/Activity/Pemindahan Kain Rollan - Page/Scan No Roll/Pop Up Pemindahan Kain Success - Button OK'), 
+    0)
 

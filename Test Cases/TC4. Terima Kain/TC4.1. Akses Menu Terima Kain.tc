@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC4.1. Akses Menu Terima Kain</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b20f254b-ac15-422c-8f7c-c4140efaaea4</testCaseGuid>
+</TestCaseEntity>

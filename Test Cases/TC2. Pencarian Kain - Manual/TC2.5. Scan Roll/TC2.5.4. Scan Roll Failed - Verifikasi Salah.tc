@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2.5.4. Scan Roll Failed - Verifikasi Salah</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e5bf4ce8-76d1-4705-b548-e1252d054b6c</testCaseGuid>
+</TestCaseEntity>
